@@ -17,9 +17,6 @@ const Navbar = ({ sidebarOpen, openSidebar }) => {
                     <i className="fa fa-search"></i>
                 </a>
                 <a href="#">
-                    <i className="fa fa-clock"></i>
-                </a>
-                <a href="#">
                     <img width="30" src={herky2} alt="herky2"/>
                 </a>
             </div>
