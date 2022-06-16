@@ -1,4 +1,5 @@
 import "./Main.css";
+import React from 'react';
 import herky2 from "../../Assets/herky2.svg"
 import Chart from "../charts/Chart";
 
@@ -91,9 +92,11 @@ const Main = () => {
                                 <h1>Orders</h1>
                                 <p>1881</p>
                             </div>
+
                         </div>
                     </div>
                 </div>
+
             </div>
         </main>
     )

@@ -1,0 +1,11 @@
+.Employee {
+    display: flex;
+}
+
+.Employee-content {
+    margin-left: 2rem;
+}
+
+.Employee-episode {
+    margin-top: 2rem;
+}
