@@ -1,7 +1,12 @@
 import "./Main.css";
 import React from 'react';
-import herky2 from "../../Assets/herky2.svg"
-import Chart from "../charts/Chart";
+import herky2 from "../../Assets/herky2.svg";
+import ListGenAvg from "../listingEmps/ListGenAvg";
+import ListMaleAvg from "../listingEmps/ListMaleAvg";
+import ListFemaleAvg from "../listingEmps/ListFemaleAvg";
+import AddEmps from "../managingEmps/AddEmps";
+import EditEmps from "../managingEmps/EditEmps";
+import DelEmps from "../managingEmps/DelEmps";
 
 const Main = () => {
     return(
@@ -18,35 +23,20 @@ const Main = () => {
                 <div className="main__cards">
                 
                     <div className="card">
-                        <i className="fa fa-user fa-2x text-lightblue"></i>
-                        <div className="card_inner">
-                            <p className="text-primary-p">Number of Subscribers</p>
-                            <span className="font-bold text-title">578</span>
-                        </div>
+                        <i className="fa fa-chart-line fa-2x"></i>
+                        <ListGenAvg/>
                     </div>
-
                     <div className="card">
-                        <i className="fa fa-calendar fa-2x text-red"></i>
-                        <div className="card_inner">
-                            <p className="text-primary-p">Times of Watching</p>
-                            <span className="font-bold text-title">2467</span>
-                        </div>
+                        <i className="fa fa-person fa-2x"></i>
+                        <ListMaleAvg/>
                     </div>
-
                     <div className="card">
-                        <i className="fa fa-video-camera fa-2x text-yellow"></i>
-                        <div className="card_inner">
-                            <p className="text-primary-p">Number of Videos</p>
-                            <span className="font-bold text-title">340</span>
-                        </div>
+                        <i className="fa fa-person-dress fa-2x"></i>
+                        <ListFemaleAvg/>
                     </div>
-
                     <div className="card">
-                        <i className="fa fa-thumbs-up fa-2x text-green"></i>
-                        <div className="card_inner">
-                            <p className="text-primary-p">Number of Likes</p>
-                            <span className="font-bold text-title">645</span>
-                        </div>
+                        <i className="fa fa-trash-can fa-2x text-red"></i>
+                        <DelEmps/>
                     </div>
 
                 </div>
@@ -55,47 +45,31 @@ const Main = () => {
                     <div className="charts__left">
                         <div className="charts__left__title">
                             <div>
-                                <h1>Daily Reports</h1>
-                                <p>Cupertino, California, USA</p>
-                            </div>
-                            <i className="fa fa-usd"></i>
+                                <h1><i className="fa fa-solid fa-user-group"></i>Add Employee:</h1>
+                                <AddEmps/>
+                            </div>         
                         </div>
-                        <Chart />
                     </div>
-
                     <div className="charts__right">
                         <div className="charts__right__title">
                             <div>
-                                <h1>Stats Reports</h1>
-                                <p>Cupertino, California, USA</p>
+                                <h1><i className="fa fa-solid fa-user-gear"></i>Edit Employee:</h1>
+                                <EditEmps/>
                             </div>
-                            <i className="fa fa-usd"></i>
                         </div>
-
                         <div className="charts__right__cards">
-                            <div className="card1">
-                                <h1>Income</h1>
+                            {/* <AddEmps/> */}
+                            {/* <div className="card1">
+                                <h1>Average Income</h1>
                                 <p>$75,300</p>
-                            </div>
-
-                            <div className="card2">
-                                <h1>Sales</h1>
-                                <p>$124,200</p>
-                            </div>
-
-                            <div className="card3">
-                                <h1>Users</h1>
-                                <p>3,900</p>
-                            </div>
-
-                            <div className="card4">
-                                <h1>Orders</h1>
-                                <p>1881</p>
-                            </div>
-
+                            </div> */}
                         </div>
                     </div>
                 </div>
+
+                 <div className="stuff">
+                    {/* <DisplayEmps/> */}
+                </div> 
 
             </div>
         </main>
