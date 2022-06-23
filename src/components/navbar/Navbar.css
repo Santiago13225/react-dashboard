@@ -12,12 +12,13 @@
 .nav_icon > i {
     font-size: 26px;
     color: #a5aaad;
+    align-items: left;
 }
 .navbar__left > a {
-    margin-right: 30px;
+    margin-right: 850px;
     text-decoration: none;
     color: #005a00;
-    font-size: 15px;
+    font-size: 25px;
     font-weight: 700;
 }
 
@@ -29,6 +30,7 @@
 
 .navbar__right {
     display: flex;
+    /* margin-left: 30px; */
     justify-content: center;
     align-items: center;
 }
