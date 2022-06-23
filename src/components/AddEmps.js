@@ -9,8 +9,6 @@ const client = createVendiaClient({
   apiKey: "CJvKnbJwMwKz9BXMmAo21iUXE3HHnyqG33qBf6Q1o2Mk",
 });
 
-//CJvKnbJwMwKz9BXMmAo21iUXE3HHnyqG33qBf6Q1o2Mk
-
 const AddEmps = () => {
 
   const { entities } = client;
@@ -66,7 +64,7 @@ const AddEmps = () => {
     <input type="text" value={age} onChange={(e)=> {setAge(parseInt(e.target.value))}}/><br/>
     </label>
     <label>
-    Gender: 
+    Gender:<br/>
     <input type="radio" value={gender} onChange={(e)=> {setGender("Woman")}}/>Female
     <input type="radio" value={gender} onChange={(e)=> {setGender("Man")}}/>Male
     <input type="radio" value={gender} onChange={(e)=> {setGender("Transgender")}}/>Transgender
@@ -110,17 +108,9 @@ const AddEmps = () => {
     <input type="text" value={work} onChange={(e)=> {setWork(parseInt(e.target.value))}}/><br/>
     </label>
     </form>
-    <button onClick={asyncAddEmployee}>Submit</button>
+    <button onClick={asyncAddEmployee}>Add Employee</button>
     </div>
   );
 };
-
-// const addEmps = () => {
-//   return (
-//     <div className="addingcontainer">
-//       <AddEmps/>
-//     </div>
-//   );
-// };
 
 export default AddEmps;
