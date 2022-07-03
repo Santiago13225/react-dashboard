@@ -4,9 +4,9 @@ import React from 'react';
 import { createVendiaClient } from '@vendia/client';
 
 const client = createVendiaClient({
-  apiUrl: `https://cc8mwqveq6.execute-api.us-west-2.amazonaws.com/graphql/`,
-  websocketUrl: `wss://dqdghw8lqd.execute-api.us-west-2.amazonaws.com/graphql`,
-  apiKey: "CJvKnbJwMwKz9BXMmAo21iUXE3HHnyqG33qBf6Q1o2Mk",
+  apiUrl: ``,
+  websocketUrl: ``,
+  apiKey: "",
 });
 
 const List4QAvg = () => {
