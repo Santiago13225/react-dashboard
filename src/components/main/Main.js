@@ -7,6 +7,14 @@ import ListFemaleAvg from "../listingEmps/ListFemaleAvg";
 import AddEmps from "../managingEmps/AddEmps";
 import EditEmps from "../managingEmps/EditEmps";
 import DelEmps from "../managingEmps/DelEmps";
+import List1QAvg from "../listingEmps/List1QAvg";
+import List2QAvg from "../listingEmps/List2QAvg";
+import List3QAvg from "../listingEmps/List3QAvg";
+import List4QAvg from "../listingEmps/List4QAvg";
+import ListLightAvg from "../listingEmps/ListLightAvg";
+import ListHeavyAvg from "../listingEmps/ListHeavyAvg";
+import ListShortAvg from "../listingEmps/ListShortAvg";
+import ListTallAvg from "../listingEmps/ListTallAvg";
 
 const Main = () => {
     return(
@@ -40,6 +48,50 @@ const Main = () => {
                     </div>
 
                 </div>
+
+
+                <div className="main__cards">
+                
+                    <div className="card">
+                        <i className="fa-solid fa-hourglass-start fa-2x"></i>
+                        <List1QAvg/>
+                    </div>
+                    <div className="card">
+                        <i className="fa-solid fa-hourglass fa-2x"></i>
+                        <List2QAvg/>
+                    </div>
+                    <div className="card">
+                        <i className="fa-solid fa-hourglass-end fa-2x"></i>
+                        <List3QAvg/>
+                    </div>
+                    <div className="card">
+                        <i className="fa-solid fa-hourglass-empty fa-2x"></i>
+                        <List4QAvg/>
+                    </div>
+
+                </div>
+
+                <div className="main__cards">
+                
+                    <div className="card">
+                        <i className="fa-solid fa-feather fa-2x"></i>
+                        <ListLightAvg/>
+                    </div>
+                    <div className="card">
+                        <i className="fa-solid fa-weight-hanging fa-2x"></i>
+                        <ListHeavyAvg/>
+                    </div>
+                    <div className="card">
+                        <i className="fa-solid fa-person"></i>
+                        <ListShortAvg/>
+                    </div>
+                    <div className="card">
+                        <i className="fa-solid fa-person fa-2x"></i>
+                        <ListTallAvg/>
+                    </div>
+
+                </div>
+
 
                 <div className="charts">
                     <div className="charts__left">
