@@ -19,12 +19,7 @@ const ListHeavyAvg = () => {
     const employeeResponse = await entities.employee.list({
         filter: {
           weight: {
-            contains: 140,
-          },
-          _and: {
-            weight: {
-              gt: 140,
-            },
+            gt: 139,
           },
         },
       });
