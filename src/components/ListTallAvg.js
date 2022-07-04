@@ -115,7 +115,7 @@ const ListTallAvg = () => {
          console.log(employeeResponse.items.length);
          console.log(avgAge);
    
-         let t1 = "Aggregate Data for Males:\nAverage Age: ";
+         let t1 = "Aggregate Data for Tall Employees:\nAverage Age: ";
          let t2 = avgAge;
          let t3 = "\nAverage Height (*In inches): ";
          let t4 = avgHeight;
