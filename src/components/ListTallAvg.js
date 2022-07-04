@@ -19,12 +19,7 @@ const ListTallAvg = () => {
     const employeeResponse = await entities.employee.list({
         filter: {
           age: {
-            contains: 69,
-          },
-          _and: {
-            age: {
-              gt: 69,
-            },
+            gt: 68,
           },
         },
       });
